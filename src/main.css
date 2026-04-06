@@ -1,72 +1,72 @@
+@font-face {
+  font-display: swap;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/outfit-v15-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/outfit-v15-latin-600.woff2") format("woff2");
+}
+
 :root {
   /* Colors - Primary */
-  --clr-primary-100: ;
-  --clr-primary-200: ;
-  --clr-primary-300: ;
-  --clr-primary-400: ;
-  --clr-primary-500: ;
-  --clr-primary-600: ;
-  --clr-primary-700: ;
-  --clr-primary-800: ;
-  --clr-primary-900: ;
+  --clr-primary-400: hsl(223 23% 46%);
+  --clr-primary-500: hsl(223 36% 14%);
+  --clr-primary-600: hsl(223 30% 9%);
 
   /* Colors - Accent */
-  --clr-accent-1: ;
-  --clr-accent-2: ;
+  --clr-accent-1: hsl(0 97% 63%);
 
   /* Colors - Neutral */
-  --clr-neutral-100: ;
-  --clr-neutral-200: ;
-  --clr-neutral-300: ;
-  --clr-neutral-400: ;
-  --clr-neutral-500: ;
-  --clr-neutral-600: ;
-  --clr-neutral-700: ;
-  --clr-neutral-800: ;
-  --clr-neutral-900: ;
+  --clr-neutral-100: hsl(0 100% 100%);
+  --clr-neutral-900: hsl(0 0% 0%);
+
+  /* Colors - Gradients */
+  --clr-gradient-1: linear-gradient(hsl(0 0% 0% / 0), hsl(0 0% 0% / 0.75));
 
   /* Font Families */
-  --ff-base: ;
-  --ff-accent: ;
+  --ff-base: "Outfit", system-ui, -apple-system, sans-serif;
 
   /* Font Sizes */
-  --fs-xs: 0.75rem; /* 12px */
-  --fs-sm: 0.875rem; /* 14px */
-  --fs-base: 1rem; /* 16px */
-  --fs-md: 1.125rem; /* 18px */
-  --fs-lg: 1.25rem; /* 20px */
-  --fs-xl: 1.5rem; /* 24px */
-  --fs-2xl: 2rem; /* 32px */
-  --fs-3xl: 3rem; /* 48px */
-  --fs-4xl: 4rem; /* 64px */
+  --fs--2: clamp(0.651rem, 0.6281rem + 0.1022vw, 0.72rem); /* Step -2: 10.4167px → 11.52px */
+  --fs--1: clamp(0.7813rem, 0.7417rem + 0.1759vw, 0.9rem); /* Step -1: 12.5px → 14.4px */
+  --fs-0: clamp(0.9375rem, 0.875rem + 0.2778vw, 1.125rem); /* Step 0: 15px → 18px */
+  --fs-1: clamp(1.125rem, 1.0313rem + 0.4167vw, 1.4063rem); /* Step 1: 18px → 22.5px */
+  --fs-2: clamp(1.35rem, 1.2141rem + 0.6042vw, 1.7578rem); /* Step 2: 21.6px → 28.125px */
+  --fs-3: clamp(1.62rem, 1.4276rem + 0.8552vw, 2.1973rem); /* Step 3: 25.92px → 35.1563px */
+
+  /* @link https://utopia.fyi/type/calculator?c=360,15,1.2,1440,18,1.25,3,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
   /* Font Weights */
-  --fw-light: ;
-  --fw-regular: ;
-  --fw-medium: ;
-  --fw-bold: ;
-  --fw-black: ;
+  --fw-regular: 400;
+  --fw-medium: 600;
 
   /* Margin / Padding Spaces */
-  --space-3xs: ;
-  --space-2xs: ;
-  --space-xs: ;
-  --space-sm: ;
-  --space-md: ;
-  --space-lg: ;
-  --space-xl: ;
-  --space-2xl: ;
-  --space-3xl: ;
+  --space-xs: clamp(0.5rem, 0.4792rem + 0.0926vw, 0.5625rem); /* Space xs: 8px → 9px */
+  --space-s: clamp(1rem, 0.9583rem + 0.1852vw, 1.125rem); /* Space s: 16px → 18px */
+  --space-m: clamp(1.5rem, 1.4375rem + 0.2778vw, 1.6875rem); /* Space m: 24px → 27px */
+  --space-l: clamp(2rem, 1.9167rem + 0.3704vw, 2.25rem); /* Space l: 32px → 36px */
+  --space-xl: clamp(2.5rem, 2.3958rem + 0.463vw, 2.8125rem); /* Space xl: 40px → 45px */
+  --space-2xl: clamp(3.5rem, 3.3542rem + 0.6481vw, 3.9375rem); /* Space 2xl: 56px → 63px */
+  --space-3xl: clamp(4.5rem, 4.3125rem + 0.8333vw, 5.0625rem); /* Space 3xl: 72px → 81px */
+  --space-4xl: clamp(5rem, 4.7917rem + 0.9259vw, 5.625rem); /* Space 4xl: 80px → 90px */
 
   /* Space One-Step-Up pairs */
-  --space-3xs-2xs: ;
-  --space-2xs-xs: ;
-  --space-xs-sm: ;
-  --space-sm-md: ;
-  --space-md-lg: ;
-  --space-lg-xl: ;
-  --space-xl-2xl: ;
-  --space-2xl-3xl: ;
+  --space-xs-s: clamp(0.5rem, 0.2917rem + 0.9259vw, 1.125rem); /* Space xs-s: 8px → 18px */
+  --space-s-m: clamp(1rem, 0.7708rem + 1.0185vw, 1.6875rem); /* Space s-m: 16px → 27px */
+  --space-m-l: clamp(1.5rem, 1.25rem + 1.1111vw, 2.25rem); /* Space m-l: 24px → 36px */
+  --space-l-xl: clamp(2rem, 1.7292rem + 1.2037vw, 2.8125rem); /* Space l-xl: 32px → 45px */
+  --space-xl-2xl: clamp(2.5rem, 2.0208rem + 2.1296vw, 3.9375rem); /* Space xl-2xl: 40px → 63px */
+  --space-2xl-3xl: clamp(3.5rem, 2.9792rem + 2.3148vw, 5.0625rem); /* Space 2xl-3xl: 56px → 81px */
+  --space-3xl-4xl: clamp(4.5rem, 4.125rem + 1.6667vw, 5.625rem); /* Space 3xl-4xl: 72px → 90px */
+
+  /* @link https://utopia.fyi/space/calculator?c=360,16,1.2,1440,18,1.25,3,2,&s=0.5,1.5|2|2.5|3.5|4.5|5,&g=s,l,xl,12 */
 }
 
 /* ******** RESET ******** */
