@@ -1,4 +1,4 @@
-# Movie-Finder
+# Watch Next Movie Finder
 
 ![App Screenshot]()
 

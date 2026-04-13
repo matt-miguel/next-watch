@@ -182,12 +182,12 @@ body {
   margin-block-start: var(--flow-space, 1rem);
 }
 
-.flex-flow {
+.flex {
   display: flex;
   gap: var(--gap, 1rem);
 }
 
-.grid-flow {
+.grid {
   --column-count: 1;
   --column-size: 1fr;
   --column-template: repeat(var(--column-count, 1), var(--column-size, 1fr));
@@ -234,6 +234,9 @@ body {
 }
 
 /* ******** COMPONENTS ******** */
+a.active {
+  color: var(--clr-accent-1);
+}
 
 /* ******** BLOCK STYLES ******** */
 
