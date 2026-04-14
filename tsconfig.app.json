@@ -27,8 +27,9 @@
     "noPropertyAccessFromIndexSignature": true,
     "exactOptionalPropertyTypes": true,
     "paths": {
-      "@/*": ["./src/"],
-      "@components/*": ["./src/components"]
+      "@/*": ["./src/*"],
+      "@components/*": ["./src/components/*"],
+      "@services/*": ["./src/services/*"]
     }
   },
   "include": ["src"]
